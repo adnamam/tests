@@ -1,0 +1,8 @@
+seleniumProj/utilities/BasePage.class
+seleniumProj/utilities/WebDriverFactory.class
+seleniumProj/sProj/HomePage.class
+seleniumProj/sProj/App.class
+seleniumProj/utilities/GetPropertyValues.class
+seleniumProj/utilities/CommonUtils.class
+seleniumProj/sProj/HeaderPage.class
+seleniumProj/utilities/WebDriverManager.class

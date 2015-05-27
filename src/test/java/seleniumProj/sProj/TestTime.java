@@ -6,8 +6,8 @@ public class TestTime extends BaseTest{
 	
 	@Test
 	public void doStuff() {
-		HomePage homePage = getHomePage();
-		homePage.search("saturn");
+		HeaderPage header = getHeaderPage();
+		header.search("saturn");
 	}
 
 }

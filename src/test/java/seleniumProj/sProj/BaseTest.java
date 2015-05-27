@@ -8,9 +8,9 @@ import seleniumProj.utilities.WebDriverManager;
 
 public class BaseTest {
 	
-	public HomePage getHomePage() {
+	public HeaderPage getHeaderPage() {
 		driver().get("http://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html");
-		return getPage(HomePage.class);
+		return getPage(HeaderPage.class);
 	}
 	
 	/**

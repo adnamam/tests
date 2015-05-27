@@ -12,11 +12,12 @@ public class HeaderPage extends BasePage {
 		super(driver);
 	}
 	
-	public void search(String searchText) {
+	public ContentPage search(String searchText) {
 		WebElement searchBox = driver.findElement(By.id("searchbox-1022-inputEl"));
 		searchBox.clear();
 		searchBox.sendKeys(searchText);
 		driver.findElement(By.id("ext-gen1088")).click();
+		return getPage(ContentPage.class);
 	}
 	
 	/**

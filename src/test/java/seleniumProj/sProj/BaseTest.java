@@ -4,9 +4,10 @@ import org.junit.After;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import seleniumProj.utilities.CommonUtils;
 import seleniumProj.utilities.WebDriverManager;
 
-public class BaseTest {
+public class BaseTest extends CommonUtils{
 	
 	public HeaderPage getHeaderPage() {
 		driver().get("http://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html");

@@ -1,7 +1,6 @@
 package seleniumProj.sProj;
 
 import org.junit.Assert;
-
 import org.junit.Test;
 
 public class TestTime extends BaseTest{
@@ -11,10 +10,11 @@ public class TestTime extends BaseTest{
 		HeaderPage header = getHeaderPage();
 		ContentPage contentPage = header.search("saturn");
 		contentPage.clickFirstAddToBasket();
-		contentPage.downloadBasketGuy();
+//		contentPage.downloadBasketGuy();
 		
 		DownloadBasketPage db = getPage(DownloadBasketPage.class);
 		Assert.assertTrue(db.isWindowDisplayed());
+//		Assert.assertTrue(db.isRecommendedProductsChecked());
 		
 	}
 

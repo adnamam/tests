@@ -9,13 +9,13 @@ public class TestTime extends BaseTest{
 	public void doStuff() {
 		HeaderPage header = getHeaderPage();
 		ContentPage contentPage = header.search("saturn");
+//		contentPage.clickFirstAddToBasket();
 		contentPage.clickFirstAddToBasket();
-//		contentPage.downloadBasketGuy();
 		
 		DownloadBasketPage db = getPage(DownloadBasketPage.class);
 		Assert.assertTrue(db.isWindowDisplayed());
 //		Assert.assertTrue(db.isRecommendedProductsChecked());
-		
+		db.closeWindow();
 	}
 
 }

@@ -71,5 +71,12 @@ public class DownloadBasketPage extends BasePage{
 	public boolean isDownloadItemsEnabled() {
 		return downloadButton().getAttribute("data-qtip").equals("Download Selected Items");
 	}
+	
+	/**
+	 * Closes the download basket window
+	 */
+	public void closeWindow() {
+		driver.findElement(By.id("tool-1471-toolEl")).click();
+	}
 
 }

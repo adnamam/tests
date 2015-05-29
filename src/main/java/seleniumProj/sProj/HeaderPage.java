@@ -12,6 +12,11 @@ public class HeaderPage extends BasePage {
 		super(driver);
 	}
 	
+	/**
+	 * Performs search and returns the Observations List Page
+	 * @param searchText
+	 * @return
+	 */
 	public ContentPage search(String searchText) {
 		WebElement searchBox = driver.findElement(By.id("searchbox-1022-inputEl"));
 		searchBox.clear();
